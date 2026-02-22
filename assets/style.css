@@ -134,6 +134,12 @@ nav{
   display: block;
   margin: 0 auto 20px auto; /* center + jarak bawah */
 }
+
+.hero-icon img {
+  max-width: 40%;   /* maksimal 40% dari lebar container */
+  height: auto;
+}
+
 .card-icon  {
   font-size: 40px;
   margin-bottom: 15px;
