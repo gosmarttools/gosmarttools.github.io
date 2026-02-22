@@ -77,46 +77,9 @@ nav{
 
 
 
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-}
 
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 20px;
-  color: #0d6efd;
-}
 
-.hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
-  color: #333;
-}
 
-.hero-buttons .btn {
-  display: inline-block;
-  margin: 0 10px;
-  padding: 12px 28px;
-  font-size: 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.hero-buttons .btn-primary {
-  background-color: #0d6efd;
-  color: #fff;
-}
-
-.hero-buttons .btn-primary:hover {
-  background-color: #0056b3;
-}
-
-.hero-buttons .btn-secondary {
-  background-color: #d63384;
-  color: #fff;
-}
 
 .hero-buttons .btn-secondary:hover {
   background-color: #a81d5c;
