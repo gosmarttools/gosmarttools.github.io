@@ -93,7 +93,39 @@ nav{
   border-radius:12px;
 }
 
+
+.hero-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #0d6efd;
+}
+
+.hero-icon-small {
+  font-size: 30px;
+  margin: 15px 0;
+  color: #198754;
+}
+
+.card {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.card-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #d63384;
+}
+
+
+
+
 /* ================= FOOTER ================= */
+
+
+
+
+
 
 .footer{
   background:#0b1220;
