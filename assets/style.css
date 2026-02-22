@@ -112,13 +112,17 @@ nav{
 }
 
 .card-icon i {
-  font-size: 60px;
+  font-size: 30px;
   margin-bottom: 15px;
   color: #d63384;
 }
 
 
-
+.card-icon  {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #d63384;
+}
 
 /* ================= FOOTER ================= */
 
