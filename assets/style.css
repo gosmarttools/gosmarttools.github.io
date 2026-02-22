@@ -1,3 +1,14 @@
+/* ================= GLOBAL ================= */
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Inter,system-ui;
+  background:#0f172a;
+  color:#e5e7eb;
+  line-height:1.7;
+}
+
 /* ================= NAVBAR ================= */
 
 nav{
@@ -14,7 +25,16 @@ nav{
   z-index:1000;
 }
 
-/* Desktop menu */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;
+  color:#fff;
+}
+
+.logo img{height:36px}
+
 .nav-links{
   display:flex;
   gap:25px;
@@ -24,28 +44,106 @@ nav{
   text-decoration:none;
   color:#cbd5e1;
   font-weight:500;
-  transition:.3s ease;
+  transition:.3s;
 }
 
 .nav-links a:hover{
   color:#fff;
 }
 
-/* ================= HAMBURGER ================= */
-
 .hamburger{
   display:none;
   flex-direction:column;
   cursor:pointer;
-  gap:4px;
 }
 
 .hamburger span{
   height:3px;
   width:25px;
   background:#fff;
-  border-radius:2px;
-  transition:0.3s ease;
+  margin:4px 0;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  padding:170px 8% 120px;
+  text-align:center;
+  background:linear-gradient(135deg,#2563eb,#7c3aed);
+  color:#fff;
+}
+
+/* ================= SECTION ================= */
+
+.section{
+  padding:100px 8%;
+  max-width:1100px;
+  margin:auto;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:#1e293b;
+  padding:30px;
+  border-radius:12px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+  background:#0b1220;
+  padding:60px 8% 30px;
+  color:#94a3b8;
+}
+
+.footer-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  gap:40px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.footer-brand h3{
+  color:#fff;
+  margin-bottom:10px;
+}
+
+.footer-brand p{
+  max-width:300px;
+  font-size:14px;
+}
+
+.footer-links{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.footer-links a{
+  text-decoration:none;
+  color:#94a3b8;
+  font-size:14px;
+  transition:.3s;
+}
+
+.footer-links a:hover{
+  color:#fff;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:40px;
+  padding-top:20px;
+  border-top:1px solid rgba(255,255,255,0.08);
+  font-size:13px;
 }
 
 /* ================= MOBILE ================= */
@@ -61,15 +159,11 @@ nav{
     flex-direction:column;
     align-items:center;
     padding:20px 0;
-
-    /* Smooth dropdown */
-    max-height:0;
-    overflow:hidden;
-    transition:max-height 0.3s ease;
+    display:none;
   }
 
   .nav-links.active{
-    max-height:400px; /* cukup untuk semua menu */
+    display:flex;
   }
 
   .nav-links a{
@@ -81,4 +175,9 @@ nav{
   .hamburger{
     display:flex;
   }
+
+  .footer-container{
+    flex-direction:column;
+  }
+
 }
