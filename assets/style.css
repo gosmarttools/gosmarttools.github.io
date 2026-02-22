@@ -111,8 +111,8 @@ nav{
   padding: 30px 20px;
 }
 
-.card-icon {
-  font-size: 42px;
+.card-icon i {
+  font-size: 60px;
   margin-bottom: 15px;
   color: #d63384;
 }
