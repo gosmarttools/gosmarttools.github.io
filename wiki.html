@@ -6,156 +6,151 @@
 <title>GoSmart Wiki</title>
 <style>
   body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background: #f8f9fa;
+    color: #202122;
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    background: #f4f6f8;
-    color: #1f2937;
-  }
-  nav {
-    width: 250px;
-    background: #ffffff;
-    padding: 20px;
-    box-shadow: 2px 0 6px rgba(0,0,0,0.1);
-    height: 100vh;
-    position: fixed;
-    overflow-y: auto;
-  }
-  nav h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #2563eb;
-  }
-  nav ul {
-    list-style: none;
     padding: 0;
   }
-  nav ul li {
-    margin: 8px 0;
+  header {
+    background: #ececec;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dcdcdc;
   }
-  nav ul li a {
-    text-decoration: none;
-    color: #1f2937;
-    transition: color 0.2s;
+  header h1 {
+    font-size: 28px;
+    margin: 0;
+    display: inline-block;
+    color: #0645ad;
   }
-  nav ul li a:hover {
-    color: #2563eb;
+  header p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #666;
   }
   main {
-    margin-left: 270px;
-    padding: 20px;
     max-width: 900px;
-  }
-  section {
-    margin-bottom: 40px;
+    margin: 20px auto;
+    padding: 0 15px;
     background: #ffffff;
+    border: 1px solid #dcdcdc;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
   }
-  section h2 {
-    color: #10b981;
+  h2, h3 {
+    color: #0645ad;
+    margin-top: 20px;
   }
-  section h3 {
-    color: #2563eb;
-    margin-top: 15px;
-  }
-  section ul {
+  ul {
     list-style-type: disc;
     margin-left: 20px;
   }
-  footer {
-    text-align: center;
-    margin-top: 50px;
+  a {
+    color: #0645ad;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .toc {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
     padding: 10px;
-    color: #6b7280;
+    margin-bottom: 20px;
+  }
+  .toc h2 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
   }
 </style>
 </head>
 <body>
 
-<nav>
-  <h2>Daftar Isi Wiki</h2>
-  <ul>
-    <li><a href="#home">Beranda</a></li>
-    <li><a href="#tools">Tools</a></li>
-    <li><a href="#pos">POS</a></li>
-    <li><a href="#software">Software</a></li>
-    <li><a href="#hardware">Hardware</a></li>
-    <li><a href="#web">Web, JS, HTML</a></li>
-    <li><a href="#github">GitHub</a></li>
-  </ul>
-</nav>
+<header>
+  <h1>GoSmart Wiki</h1>
+  <p>Sejarah, Teknologi, dan Panduan Penggunaan GoSmart Tools</p>
+</header>
 
 <main>
+  <div class="toc">
+    <h2>Daftar Isi</h2>
+    <ul>
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#pos">POS</a></li>
+      <li><a href="#software">Software</a></li>
+      <li><a href="#hardware">Hardware</a></li>
+      <li><a href="#web">Web, JS, HTML</a></li>
+      <li><a href="#github">GitHub</a></li>
+    </ul>
+  </div>
+
   <section id="home">
     <h2>Beranda</h2>
-    <p>Selamat datang di GoSmart Wiki. Wiki ini berisi sejarah, konsep, dan panduan penggunaan berbagai Tools IT, POS, Software, Hardware, serta pengembangan berbasis Web yang mendukung ekosistem GoSmart Tools.</p>
+    <p>GoSmart Wiki adalah dokumentasi edukatif yang berisi sejarah, konsep, dan panduan penggunaan berbagai Tools IT, POS, Software, Hardware, serta pengembangan Web yang terkait dengan GoSmart Tools.</p>
   </section>
 
   <section id="tools">
     <h2>Sejarah Tools</h2>
-    <p>Tools GoSmart lahir dari kebutuhan efisiensi dalam manajemen IT dan bisnis modern. Sejak awal, fokusnya adalah:</p>
+    <p>Tools GoSmart diciptakan untuk meningkatkan efisiensi dan produktivitas dalam aktivitas IT dan bisnis modern. Fitur utama meliputi:</p>
     <ul>
-      <li>Meningkatkan produktivitas dengan otomasi tugas rutin</li>
-      <li>Menyediakan integrasi mudah untuk sistem POS dan Software</li>
-      <li>Memberikan dashboard monitoring yang intuitif</li>
+      <li>Otomasi tugas rutin</li>
+      <li>Integrasi dengan sistem POS dan Software</li>
+      <li>Dashboard monitoring dan analitik</li>
     </ul>
   </section>
 
   <section id="pos">
     <h2>Point of Sale (POS)</h2>
-    <p>POS GoSmart memudahkan transaksi, laporan penjualan, dan manajemen inventori. Sistem POS ini:</p>
+    <p>POS GoSmart mempermudah manajemen transaksi, inventori, dan laporan penjualan. Sistem ini:</p>
     <ul>
-      <li>Terhubung langsung dengan Tools GoSmart</li>
-      <li>Mendukung hardware POS standar</li>
-      <li>Menyediakan laporan real-time untuk bisnis retail</li>
+      <li>Menyediakan laporan real-time</li>
+      <li>Kompatibel dengan hardware POS standar</li>
+      <li>Terhubung dengan Tools GoSmart untuk efisiensi bisnis</li>
     </ul>
   </section>
 
   <section id="software">
     <h2>Software</h2>
-    <p>Software GoSmart mencakup aplikasi web dan desktop yang mempermudah pengelolaan sistem dan integrasi layanan pihak ketiga.</p>
+    <p>Software GoSmart mendukung pengelolaan sistem IT, integrasi API, dan otomasi data. Beberapa fitur:</p>
     <ul>
       <li>Monitoring server dan client</li>
-      <li>Integrasi API eksternal untuk otomasi data</li>
-      <li>Penyimpanan cloud dengan keamanan tinggi</li>
+      <li>Integrasi API pihak ketiga</li>
+      <li>Backup dan keamanan data berbasis cloud</li>
     </ul>
   </section>
 
   <section id="hardware">
     <h2>Hardware</h2>
-    <p>GoSmart mendukung perangkat keras modern, seperti:</p>
+    <p>GoSmart mendukung berbagai perangkat keras, termasuk:</p>
     <ul>
-      <li>Komputer, laptop, dan server</li>
-      <li>POS terminal, printer, scanner, dan peripheral</li>
-      <li>Optimasi performa untuk perangkat yang terhubung ke Tools</li>
+      <li>Komputer, laptop, server</li>
+      <li>POS terminal, printer, scanner</li>
+      <li>Optimasi performa dengan Tools GoSmart</li>
     </ul>
   </section>
 
   <section id="web">
     <h2>Web, JavaScript, HTML</h2>
-    <p>GoSmart Wiki juga membahas teknologi web yang digunakan dalam Tools:</p>
+    <p>Web Tools GoSmart menggunakan teknologi modern:</p>
     <ul>
       <li>HTML5 & CSS3 untuk tampilan profesional</li>
-      <li>JavaScript modern untuk interaktivitas</li>
-      <li>Customer Support berbasis chat & ticket system</li>
+      <li>JavaScript untuk interaktivitas</li>
+      <li>Customer Support berbasis chat dan ticket system</li>
     </ul>
   </section>
 
   <section id="github">
     <h2>GitHub</h2>
-    <p>Semua Tools GoSmart dikelola melalui GitHub:</p>
+    <p>Semua Tools GoSmart tersedia di GitHub:</p>
     <ul>
       <li>Repository resmi: <a href="https://github.com/gosmarttools/gosmarttools.github.io">GoSmartTools</a></li>
-      <li>Dokumentasi lengkap untuk integrasi dan penggunaan</li>
-      <li>Dukungan kontribusi open source bagi developer IT</li>
+      <li>Dokumentasi lengkap untuk integrasi dan pengembangan</li>
+      <li>Kontribusi open source untuk developer IT</li>
     </ul>
   </section>
 
-  <footer>
-    &copy; 2026 GoSmart Tools. Wiki ini bersifat informatif dan edukatif.
-  </footer>
 </main>
 
 </body>
