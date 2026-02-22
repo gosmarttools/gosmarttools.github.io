@@ -122,7 +122,7 @@ nav{
   padding-top:15px;
 }
 
-/* MOBILE */
+
 @media(max-width:768px){
 
   .nav-links{
@@ -130,12 +130,23 @@ nav{
     top:70px;
     right:0;
     background:#111827;
-    width:220px;
-    flex-direction:column;
-    padding:20px;
+    width:260px;
     display:none;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    padding:20px;
     border-radius:0 0 0 12px;
   }
+
+  .nav-links.active{
+    display:grid;
+  }
+
+  .nav-links a{
+    text-align:center;
+    padding:8px 0;
+  }
+}
 
   .nav-links.active{
     display:flex;
