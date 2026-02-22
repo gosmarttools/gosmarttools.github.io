@@ -1,4 +1,5 @@
-/* NAVBAR */
+/* ================= NAVBAR ================= */
+
 nav{
   display:flex;
   justify-content:space-between;
@@ -7,11 +8,13 @@ nav{
   position:fixed;
   width:100%;
   top:0;
+  left:0;
   background:rgba(15,23,42,0.95);
   backdrop-filter:blur(10px);
   z-index:1000;
 }
 
+/* Desktop menu */
 .nav-links{
   display:flex;
   gap:25px;
@@ -21,49 +24,56 @@ nav{
   text-decoration:none;
   color:#cbd5e1;
   font-weight:500;
-  transition:.3s;
+  transition:.3s ease;
 }
 
 .nav-links a:hover{
   color:#fff;
 }
 
-/* HAMBURGER */
+/* ================= HAMBURGER ================= */
+
 .hamburger{
   display:none;
   flex-direction:column;
   cursor:pointer;
+  gap:4px;
 }
 
 .hamburger span{
   height:3px;
   width:25px;
   background:#fff;
-  margin:4px 0;
-  transition:.3s;
+  border-radius:2px;
+  transition:0.3s ease;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
+
 @media(max-width:768px){
 
   .nav-links{
     position:absolute;
     top:70px;
-    right:0;
+    left:0;
     width:100%;
     background:#111827;
     flex-direction:column;
     align-items:center;
-    padding:25px 0;
-    display:none;
+    padding:20px 0;
+
+    /* Smooth dropdown */
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.3s ease;
   }
 
   .nav-links.active{
-    display:flex;
+    max-height:400px; /* cukup untuk semua menu */
   }
 
   .nav-links a{
-    padding:12px 0;
+    padding:14px 0;
     width:100%;
     text-align:center;
   }
