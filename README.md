@@ -1,10 +1,10 @@
 <p align="center">
   <a href="https://rahuldkjain.github.io/gh-profile-readme-generator">
-    <img alt="GitHub Profile Readme Generator" src="./src/images/mdg.png" width="60" />
+    <img alt="GitHub Profile Readme Generator" src="https://i.ibb.co/Mkr545Xr/1000558083.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  GitHub Profile README Generator
+  GoSmart Tools
 </h1>
 
 <p align="center">
@@ -31,7 +31,7 @@
 <p align="center"><img src="./src/images/github-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
 
 <p align="center">
-    <a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">View Demo</a>
+    <a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">Website</a>
     ·
     <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues/new/choose">Report Bug</a>
     ·
@@ -39,15 +39,15 @@
 </p>
 
 <p align="center">
-<i>Loved the tool? Please consider <a href="https://paypal.me/mmasicompany/10">donating</a>  💸 to help it improve!</i>
+<i>Loved the tool? Please consider <a href="https://paypal.me/gosmart/10">donating</a>  💸 to help it improve!</i>
 </p>
 
 <p align="center">
-<a href="https://www.paypal.me/mmsicompany"><img src="https://img.shields.io/badge/support-PayPal-blue?logo=PayPal&style=flat-square&label=Donate" alt="sponsor github profile readme generator"/>
+<a href="https://www.paypal.me/gosmart"><img src="https://img.shields.io/badge/support-PayPal-blue?logo=PayPal&style=flat-square&label=Donate" alt="sponsor github profile readme generator"/>
 </a>
-<a href='https://ko-fi.com/tuanbagues' target='_blank'><img height='23' width="100" src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' alt='Buy Coffee for rahuldkjain' />
+<a href='https://ko-fi.com/gosmart' target='_blank'><img height='23' width="100" src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' alt='Buy Coffee for gosmart' />
 </a>
-<a href="https://www.buymeacoffee.com/tuanbagues" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:1px" />
+<a href="https://www.buymeacoffee.com/gosmart" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:1px" />
 </p>
 
 #### Tired of editing GitHub Profile README with new features?
@@ -142,15 +142,15 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 
 ## 🙇 Sponsors
 
-- [Scott C Wilson](https://github.com/scottcwilson) donated the first-ever grant to this tool. A big thanks to him.
-- [Max Schmitt](https://github.com/mxschmitt) loved the tool and showed support with his donation. Thanks a lot.
+- [Tuanbagues](https://github.com/tuanbagues) donated the first-ever grant to this tool. A big thanks to him.
+- [Bagues Achmad](https://github.com/baguesachmad) loved the tool and showed support with his donation. Thanks a lot.
 - [Aadit Kamat](https://github.com/aaditkamat) find the tool useful and showed support with his donation. A big thanks to him.
-- [Jean-Michel Fayard](https://github.com/jmfayard) used the generator to create his GitHub Profile README and he loved it. Thanks to him for showing support to the tool with the donation.
+- [Jean-Michel Fayard](https://github.com/gosmart) used the generator to create his GitHub Profile README and he loved it. Thanks to him for showing support to the tool with the donation.
 
 ## 🙏 Support
 
 <p align="left">
-<a href="https://www.paypal.me/mmsicompany/10"><img src="https://ionicabizau.github.io/badges/paypal.svg" alt="sponsor github profile readme generator"/>
+<a href="https://www.paypal.me/gosmart/10"><img src="https://ionicabizau.github.io/badges/paypal.svg" alt="sponsor github profile readme generator"/>
 </a>
 <a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator">
 <img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator" alt="tweet github profile readme generator"/>
@@ -158,12 +158,12 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 </p>
 
 <p align="left">
-  <a href='https://ko-fi.com/tuanbagues' target='_blank'><img height='23' width="100" src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' alt='Buy Coffee for rahuldkjain' />
+  <a href='https://ko-fi.com/gosmart' target='_blank'><img height='23' width="100" src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' alt='Buy Coffee for gosmart' />
   </a>
-  <a href="https://www.buymeacoffee.com/tuanbagues" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:2px" />
+  <a href="https://www.buymeacoffee.com/gosmart" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:2px" />
 </p>
 
 <hr>
 <p align="center">
-Developed with ❤️ in Indonesia 🇮🇳 
+Developed with ❤️ in Indonesia
 </p>
