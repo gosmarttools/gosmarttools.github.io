@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://rahuldkjain.github.io/gh-profile-readme-generator">
+  <a href="https://gosmarttools.github.io/">
     <img alt="GitHub Profile Readme Generator" src="https://i.ibb.co/Mkr545Xr/1000558083.png" width="60" />
   </a>
 </p>
@@ -9,13 +9,19 @@
 
 <p align="center">
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/blob/master/LICENSE" target="blank">
+  
 <img src="https://img.shields.io/github/license/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator license" />
+
 </a>
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/fork" target="blank">
+  
 <img src="https://img.shields.io/github/forks/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator forks"/>
+
 </a>
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/stargazers" target="blank">
+  
 <img src="https://img.shields.io/github/stars/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator stars"/>
+
 </a>
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues" target="blank">
 <img src="https://img.shields.io/github/issues/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator issues"/>
@@ -24,18 +30,18 @@
 <img src="https://img.shields.io/github/issues-pr/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
 </a>
 <a href="https://discord.gg/HHMs7Eg" target="blank">
-<img src="https://img.shields.io/discord/735303195105951764?label=Join%20Community&logo=discord&style=flat-square" alt="join discord community of github profile readme generator"/>
+<img src="https://img.shields.io/discord/735303195105951764?label=Join%20Community&logo=discord&style=flat-square" alt="join discord community of github profile GoSmart Tools"/>
 </a>
 </p>
 
 <p align="center"><img src="./src/images/github-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
 
 <p align="center">
-    <a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">Website</a>
+    <a href="https://gosmarttools.github.io/" target="blank">Website</a>
     ·
-    <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues/new/choose">Report Bug</a>
+    <a href="https://github.com/gosmarttools/gosmarttools.github.io/issues/new/choose">Report Bug</a>
     ·
-    <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues/new/choose">Request Feature</a>
+    <a href="https://github.com/gosmarttools/gosmarttools.github.io/issues/new/choose">Request Feature</a>
 </p>
 
 <p align="center">
@@ -60,7 +66,7 @@ This tool provides an easy way to create a GitHub profile readme with the latest
 <img src="https://img.shields.io/website?url=https%3A%2F%2Frahuldkjain.github.io%2Fgh-profile-readme-generator&logo=github&style=flat-square" />
 </a>
 
-Try the tool: [GitHub Profile README Generator](https://rahuldkjain.github.io/gh-profile-readme-generator)
+Try the tool: [GitHub Profile GoSmart Tools](https://gosmarttools.github.io/)
 
 ## 🧐 Features
 
@@ -96,7 +102,7 @@ You can preview the README too.
 1. Clone the repository
 
 ```bash
-git clone https://github.com/rahuldkjain/github-profile-readme-generator.git
+git clone https://github.com/gosmarttools/tools.git
 ```
 
 2. Change the working directory
