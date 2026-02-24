@@ -1,175 +1,161 @@
 <p align="center">
   <a href="https://gosmarttools.github.io/">
-    <img alt="GitHub Profile Readme Generator" src="https://i.ibb.co/Mkr545Xr/1000558083.png" width="60" />
+    <img src="https://i.ibb.co/Mkr545Xr/1000558083.png" width="100" alt="GoSmart Tools Logo"/>
   </a>
 </p>
-<h1 align="center">
-  GoSmart Tools
-</h1>
+
+<h1 align="center">GoSmart Tools</h1>
 
 <p align="center">
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/blob/master/LICENSE" target="blank">
-  
-<img src="https://img.shields.io/github/license/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator license" />
-
-</a>
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/fork" target="blank">
-  
-<img src="https://img.shields.io/github/forks/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator forks"/>
-
-</a>
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/stargazers" target="blank">
-  
-<img src="https://img.shields.io/github/stars/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator stars"/>
-
-</a>
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues" target="blank">
-<img src="https://img.shields.io/github/issues/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator issues"/>
-</a>
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" target="blank">
-<img src="https://img.shields.io/github/issues-pr/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
-</a>
-<a href="https://discord.gg/HHMs7Eg" target="blank">
-<img src="https://img.shields.io/discord/735303195105951764?label=Join%20Community&logo=discord&style=flat-square" alt="join discord community of github profile GoSmart Tools"/>
-</a>
-</p>
-
-<p align="center"><img src="./src/images/github-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
-
-<p align="center">
-    <a href="https://gosmarttools.github.io/" target="blank">Website</a>
-    ·
-    <a href="https://github.com/gosmarttools/gosmarttools.github.io/issues/new/choose">Report Bug</a>
-    ·
-    <a href="https://github.com/gosmarttools/gosmarttools.github.io/issues/new/choose">Request Feature</a>
+  Modular Web Utilities • API-Ready • Open Source
 </p>
 
 <p align="center">
-<i>Loved the tool? Please consider <a href="https://paypal.me/gosmart/10">donating</a>  💸 to help it improve!</i>
-</p>
-
-<p align="center">
-<a href="https://www.paypal.me/gosmart"><img src="https://img.shields.io/badge/support-PayPal-blue?logo=PayPal&style=flat-square&label=Donate" alt="sponsor github profile readme generator"/>
-</a>
-<a href='https://ko-fi.com/gosmart' target='_blank'><img height='23' width="100" src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' alt='Buy Coffee for gosmart' />
-</a>
-<a href="https://www.buymeacoffee.com/gosmart" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:1px" />
-</p>
-
-#### Tired of editing GitHub Profile README with new features?
-
-This tool provides an easy way to create a GitHub profile readme with the latest add-ons such as `visitors count`, `github stats`, etc.
-
-## 🚀 Demo
-
-<a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">
-<img src="https://img.shields.io/website?url=https%3A%2F%2Frahuldkjain.github.io%2Fgh-profile-readme-generator&logo=github&style=flat-square" />
-</a>
-
-Try the tool: [GitHub Profile GoSmart Tools](https://gosmarttools.github.io/)
-
-## 🧐 Features
-
-Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`, `Current Work`, `Portfolio`, `Blog`, etc. with a minimal UI.
-
-- **Uniform Dev Icons**
-
-- **Uniform Social Icons**
-
-- **Visitors Counter Badge**
-
-- **GitHub Profile Stats Card**
-
-- **GitHub Top Skills**
-
-- **GitHub Streak Stats**
-
-- **Dynamic Dev(.)to Blogs** (GitHub Action)
-
-- **Dynamic Medium Blogs** (GitHub Action)
-
-- **Dynamic Personal Blogs from RSS Feed** (GitHub Action)
-
-- **Wakatime Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/115)
-
-- **Buy Me A Coffee button**
-
-Click on `Generate README` to get your README in `markdown`.
-You can preview the README too.
-
-## 🛠️ Installation Steps
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/gosmarttools/tools.git
-```
-
-2. Change the working directory
-
-```bash
-cd github-profile-readme-generator
-```
-
-3. Install dependencies
-
-```bash
-npm install
-```
-
-4. Run the app
-
-```bash
-npm start
-```
-
-🌟 You are all set!
-
-## 🍰 Contributing
-
-Please contribute using [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add commits, and [open a pull request](https://github.com/rahuldkjain/github-profile-readme-generator/compare).
-
-Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
-
-## 💻 Built with
-
-- [Gatsby](https://www.gatsbyjs.com/)
-- [Tailwind CSS](https://tailwindcss.com/): for styling
-- [GSAP](https://greensock.com/gsap/): for small SVG Animations
-
-## 🙇 Special Thanks
-
-- [Anurag Hazra](https://github.com/anuraghazra) for amazing [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
-- [Anton Komarev](https://github.com/antonkomarev) for super cool [github-profile-views-counter](https://github.com/antonkomarev/github-profile-views-counter)
-- [Gautam Krishna R](https://github.com/gautamkrishnar) for the awesome [blog post workflow](https://github.com/gautamkrishnar/blog-post-workflow)
-- [Jonah Lawrence](https://github.com/DenverCoder1) for the incredible [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats)
-- [Julien Monty](https://github.com/konpa) for super useful [devicon](https://github.com/konpa/devicon)
-- [Eliot Sanford](https://github.com/techieeliot) for adding hashnode as a blog input
-
-## 🙇 Sponsors
-
-- [Tuanbagues](https://github.com/tuanbagues) donated the first-ever grant to this tool. A big thanks to him.
-- [Bagues Achmad](https://github.com/baguesachmad) loved the tool and showed support with his donation. Thanks a lot.
-- [Aadit Kamat](https://github.com/aaditkamat) find the tool useful and showed support with his donation. A big thanks to him.
-- [Jean-Michel Fayard](https://github.com/gosmart) used the generator to create his GitHub Profile README and he loved it. Thanks to him for showing support to the tool with the donation.
-
-## 🙏 Support
-
-<p align="left">
-<a href="https://www.paypal.me/gosmart/10"><img src="https://ionicabizau.github.io/badges/paypal.svg" alt="sponsor github profile readme generator"/>
-</a>
-<a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator">
-<img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Frahuldkjain.github.io%2Fgithub-profile-readme-generator" alt="tweet github profile readme generator"/>
-</a>
-</p>
-
-<p align="left">
-  <a href='https://ko-fi.com/gosmart' target='_blank'><img height='23' width="100" src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' alt='Buy Coffee for gosmart' />
-  </a>
-  <a href="https://www.buymeacoffee.com/gosmart" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:2px" />
+  <img src="https://img.shields.io/github/stars/gosmarttools/tools?style=flat-square" />
+  <img src="https://img.shields.io/github/forks/gosmarttools/tools?style=flat-square" />
+  <img src="https://img.shields.io/github/issues/gosmarttools/tools?style=flat-square" />
+  <img src="https://img.shields.io/github/license/gosmarttools/tools?style=flat-square" />
 </p>
 
 <hr>
+
+<h2>🧠 Philosophy</h2>
+
+<p>
+GoSmart Tools is a modular collection of practical web-based utilities 
+built for developers who prefer clean architecture, minimal dependencies, 
+and scalable design.
+</p>
+
+<ul>
+  <li>No unnecessary abstraction</li>
+  <li>No bloated frameworks</li>
+  <li>API-first mindset</li>
+  <li>Composable architecture</li>
+</ul>
+
+<hr>
+
+<h2>⚙️ Architecture Overview</h2>
+
+<pre>
+/core
+/modules
+/ui
+/api
+/assets
+/config
+</pre>
+
+<p>
+Each module is isolated and extendable.
+Designed to evolve into a unified SaaS-ready ecosystem.
+</p>
+
+<hr>
+
+<h2>🚀 Current Modules</h2>
+
+<ul>
+  <li>GitHub Profile Generator</li>
+  <li>Smart Link Builder</li>
+  <li>Media & Asset Utilities</li>
+  <li>API Helper Toolkit</li>
+  <li>Banner & Ad Builder</li>
+</ul>
+
+<hr>
+
+<h2>🛠 Tech Stack</h2>
+
+<ul>
+  <li>Node.js</li>
+  <li>Express</li>
+  <li>Vanilla JavaScript (Modular Pattern)</li>
+  <li>Tailwind CSS</li>
+  <li>GitHub Pages Deployment</li>
+</ul>
+
+<hr>
+
+<h2>📦 Local Development</h2>
+
+<pre><code>git clone https://github.com/gosmarttools/tools.git
+cd tools
+npm install
+npm start
+</code></pre>
+
+<hr>
+
+<h2>🧩 Contribution Guide</h2>
+
+<p>
+We follow a strict modular contribution rule:
+</p>
+
+<ul>
+  <li>Keep functions atomic</li>
+  <li>No global pollution</li>
+  <li>No breaking core without discussion</li>
+  <li>PR must be documented</li>
+</ul>
+
+<p>
+Workflow:
+</p>
+
+<pre><code>
+fork → branch → commit → pull request
+</code></pre>
+
+<hr>
+
+<h2>🗺 Roadmap</h2>
+
+<ul>
+  <li>Core API Engine</li>
+  <li>Internal Auth Layer</li>
+  <li>AI Integration Module</li>
+  <li>Dashboard System</li>
+  <li>Plugin Marketplace</li>
+</ul>
+
+<hr>
+
+<h2>🌐 Live Project</h2>
+<hr>
+
+<h2>📝 Technical Blog & Updates</h2>
+
+<p>
+Stay updated with development logs, architecture decisions, 
+experimental builds, and internal engineering notes.
+</p>
+
+<p>
+<strong>👉 Follow the development journey here:</strong>
+</p>
+
+<p>
+<a href="https://gosmarttools.blogspot.com" target="_blank">
+  https://gosmarttools.blogspot.com
+</a>
+</p>
+<p>
+<a href="https://gosmarttools.github.io/">https://gosmarttools.github.io/</a>
+</p>
+
+<hr>
+
+<h2>📜 License</h2>
+
+<p>
+MIT License – Open for collaboration and extension.
+</p>
+
+<hr>
+
 <p align="center">
-Developed with ❤️ in Indonesia
+Built with discipline in Indonesia 🇮🇩
 </p>
