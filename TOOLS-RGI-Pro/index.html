@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>TOOLS RGI Pro - README.md Generator Interactive</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; max-width: 1000px; line-height:1.5; }
+h1,h2,h3 { color: #2c3e50; }
+label { display: block; margin-top: 15px; font-weight: bold; }
+input, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+button { margin-top: 20px; padding: 10px 25px; font-size: 16px; cursor: pointer; }
+#output, #previewHTML { margin-top: 20px; padding: 10px; border: 1px solid #ccc; background:#f9f9f9; }
+.tip { font-size: 0.9em; color: #555; }
+#logoDrop { width: 150px; height: 150px; border: 2px dashed #aaa; display: flex; justify-content: center; align-items: center; margin-top: 10px; cursor: pointer; }
+#logoDrop img { max-width: 100%; max-height: 100%; }
+.instructions { background: #f1f1f1; padding: 10px; margin-top: 20px; border-left: 4px solid #2c3e50; }
+</style>
+</head>
+<body>
 
+<h1>TOOLS RGI Pro - README.md Generator Interactive</h1>
+<p class="tip">Drag & drop logo atau klik kotak untuk memilih file. Isi semua field → klik <b>Generate README</b> → Download README.md</p>
+
+<div class="instructions">
+<h3>Panduan Penggunaan Tool:</h3>
+<ul>
+<li>Isi semua field form dengan informasi proyek Anda.</li>
+<li>Gunakan <b>@username</b> untuk owner dan team GitHub.</li>
+<li>Field license gunakan format: <b>MIT - https://opensource.org/licenses/MIT</b></li>
+<li>Live Project URL bersifat opsional. Jika diisi, akan menampilkan **placeholder screenshot** dari folder <code>assets/</code>.</li>
+<li>Setelah klik Generate, preview Markdown & HTML akan muncul di bawah form.</li>
+<li>Download README.md untuk langsung upload ke repo GitHub Anda.</li>
+<li>Pastikan file screenshot placeholder sudah tersedia di <code>assets/screenshot-placeholder.png</code>.</li>
+<li>Untuk validitas informasi: isi semua field sesuai kondisi nyata proyek Anda.</li>
+<li>Untuk penerapan: upload README.md ke repo, pastikan logo dan screenshot tersedia di folder <code>assets/</code> atau gunakan link raw GitHub.</li>
+</ul>
+</div>
+
+<form id="readmeForm">
+<label>1. Logo (drag & drop atau klik)</label>
+<div id="logoDrop"><img src="assets/logo-default.png" alt="Logo Default"></div>
+<input type="file" id="logoInput" accept="image/*" style="display:none;">
+
+<label>2. Judul Repo / Header</label>
+<input type="text" id="header" placeholder="TOOLS RGI Pro" value="TOOLS RGI Pro">
+
+<label>3. Star Count</label>
+<input type="text" id="stars" placeholder="Misal: 120">
+
+<label>4. Fork Count</label>
+<input type="text" id="forks" placeholder="Misal: 30">
+
+<label>5. License (Nama + Link, misal: MIT - https://opensource.org/licenses/MIT)</label>
+<input type="text" id="license" placeholder="MIT - https://opensource.org/licenses/MIT">
+
+<label>6. About / Philosophy</label>
+<textarea id="about" placeholder="Deskripsi singkat proyek"></textarea>
+
+<label>7. Architecture Overview</label>
+<textarea id="architecture" placeholder="Gambaran arsitektur proyek"></textarea>
+
+<label>8. Current Modules (pisahkan koma)</label>
+<input type="text" id="modules" placeholder="Module1, Module2">
+
+<label>9. Tech Stack (pisahkan koma)</label>
+<input type="text" id="techstack" placeholder="Node.js, Express">
+
+<label>10. Local Development Instructions</label>
+<textarea id="localdev" placeholder="Langkah setup lokal"></textarea>
+
+<label>11. Owner GitHub (@id)</label>
+<input type="text" id="owner" placeholder="@username">
+
+<label>12. Team Members (@id, pisahkan koma)</label>
+<input type="text" id="team" placeholder="@member1, @member2">
+
+<label>13. Contribution Guide</label>
+<textarea id="contribguide" placeholder="Cara berkontribusi"></textarea>
+
+<label>14. Contributors (link GitHub atau @id, pisahkan koma)</label>
+<input type="text" id="contriblist" placeholder="https://github.com/user1, @user2">
+
+<label>15. Roadmap</label>
+<textarea id="roadmap" placeholder="Rencana pengembangan"></textarea>
+
+<label>16. Live Project URL (opsional untuk screenshot placeholder)</label>
+<input type="text" id="liveproject" placeholder="https://linkliveproject.com">
+
+<label>17. Technical Blog & Updates URL</label>
+<input type="text" id="blogupdates" placeholder="https://blogupdates.com">
+
+<button type="button" onclick="generateReadme()">Generate README</button>
+<button type="button" onclick="downloadReadme()">Download README.md</button>
+</form>
+
+<h2>Preview Markdown</h2>
+<div id="output"></div>
+
+<h2>Preview HTML</h2>
+<div id="previewHTML"></div>
+
+<script>
+const logoDrop = document.getElementById('logoDrop');
+const logoInput = document.getElementById('logoInput');
+let logoDataURL = "assets/logo-default.png";
+
+logoDrop.addEventListener('click', () => logoInput.click());
+logoInput.addEventListener('change', e => handleFiles(e.target.files));
+logoDrop.addEventListener('dragover', e => { e.preventDefault(); logoDrop.style.borderColor = '#333'; });
+logoDrop.addEventListener('dragleave', e => { e.preventDefault(); logoDrop.style.borderColor = '#aaa'; });
+logoDrop.addEventListener('drop', e => { e.preventDefault(); handleFiles(e.dataTransfer.files); logoDrop.style.borderColor = '#aaa'; });
+
+function handleFiles(files) {
+  const file = files[0];
+  if(file && file.type.startsWith('image/')){
+    const reader = new FileReader();
+    reader.onload = e => {
+      logoDrop.innerHTML = `<img src="${e.target.result}">`;
+      logoDataURL = e.target.result;
+    }
+    reader.readAsDataURL(file);
+  }
+}
+
+async function getGitHubAvatar(username){
+  username = username.replace('@','');
+  try{
+    const res = await fetch(`https://api.github.com/users/${username}`);
+    if(res.ok){ const data = await res.json(); return data.avatar_url; }
+    return '';
+  } catch(e){ return ''; }
+}
+
+let lastMarkdown = '';
+
+async function generateReadme(){
+  const header = document.getElementById('header').value;
+  const stars = document.getElementById('stars').value;
+  const forks = document.getElementById('forks').value;
+  const licenseInput = document.getElementById('license').value;
+  const about = document.getElementById('about').value;
+  const architecture = document.getElementById('architecture').value;
+  const modules = document.getElementById('modules').value.split(',');
+  const techstack = document.getElementById('techstack').value.split(',');
+  const localdev = document.getElementById('localdev').value;
+  const owner = document.getElementById('owner').value;
+  const team = document.getElementById('team').value.split(',');
+  const contribguide = document.getElementById('contribguide').value;
+  const contriblist = document.getElementById('contriblist').value.split(',');
+  const roadmap = document.getElementById('roadmap').value;
+  const liveproject = document.getElementById('liveproject').value;
+  const blogupdates = document.getElementById('blogupdates').value;
+
+  let licenseName='', licenseLink='';
+  if(licenseInput.includes('-')){
+    [licenseName, licenseLink] = licenseInput.split('-').map(s => s.trim());
+  } else { licenseName = licenseInput; licenseLink = ''; }
+
+  const ownerAvatar = await getGitHubAvatar(owner);
+  const teamAvatars = await Promise.all(team.map(async t => {
+    const avatar = await getGitHubAvatar(t.trim());
+    return avatar ? `![${t.trim()}](${avatar}) @${t.trim()}` : `@${t.trim()}`;
+  }));
+
+  // Screenshot placeholder manual
+  let liveScreenshot = liveproject ? `![Live Project Screenshot](assets/screenshot-placeholder.png)` : '';
+
+  let licenseBadge = licenseLink ? `![License](https://img.shields.io/badge/License-${licenseName.replace(/ /g,'%20')}-blue.svg)` : '';
+
+  const md = `
+![Logo](${logoDataURL})
+
+# ${header}
+
+${licenseBadge} **Stars:** ${stars} | **Forks:** ${forks}
+
+## About
+${about}
+
+## Architecture Overview
+${architecture}
+
+## Current Modules
+${modules.map(m => `- ${m.trim()}`).join('\n')}
+
+## Tech Stack
+${techstack.map(t => `- ${t.trim()}`).join('\n')}
+
+## Local Development
+${localdev}
+
+## Owner
+![${owner}](${ownerAvatar}) @${owner}
+
+## Team
+${teamAvatars.join('\n')}
+
+## Contribution Guide
+${contribguide}
+
+## Contributors
+${contriblist.map(c => `- ${c.trim()}`).join('\n')}
+
+## Roadmap
+${roadmap}
+
+## Live Project
+${liveScreenshot}
+
+## Technical Blog & Updates
+[Blog & Updates](${blogupdates})
+
+## License
+[${licenseName}](${licenseLink})
+`;
+
+  lastMarkdown = md;
+  document.getElementById('output').innerText = md;
+  document.getElementById('previewHTML').innerHTML = md
+    .replace(/!\[([^\]]*)\]\(([^)]+)\)/g,'<img alt="$1" src="$2" style="max-width:100%"/>')
+    .replace(/^# (.*$)/g,'<h1>$1</h1>')
+    .replace(/^## (.*$)/g,'<h2>$1</h2>')
+    .replace(/^-\s(.*$)/g,'<li>$1</li>')
+    .replace(/\n/g,'<br>');
+}
+
+function downloadReadme(){
+  if(!lastMarkdown){ alert("Klik 'Generate README' dulu sebelum download!"); return; }
+  const blob = new Blob([lastMarkdown], {type: "text/markdown"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "README.md";
+  a.click();
+  URL.revokeObjectURL(url);
+}
+</script>
+
+</body>
+</html>
