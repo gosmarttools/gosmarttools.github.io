@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoSmart AI - Asisten Pembuatan Website</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--text);
+            margin-bottom: 8px;
+            font-size: 24px;
+        }
+
+        p.subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        select, textarea, input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: #0f172a;
+            color: var(--text);
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        select:focus, textarea:focus, input[type="text"]:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .output-box {
+            margin-top: 24px;
+            padding: 15px;
+            background: #0f172a;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            display: none;
+        }
+
+        .output-box h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: var(--primary);
+        }
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #e2e8f0;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>GoSmart AI</h1>
+        <p class="subtitle">Buat kode template website, plugin, atau struktur dengan bantuan AI</p>
+        
+        <div class="form-group">
+            <label for="platform">Pilih Platform Website:</label>
+            <select id="platform">
+                <option value="blogspot">Blogspot (XML / Widget)</option>
+                <option value="wordpress">WordPress (Theme / Plugin)</option>
+                <option value="html5">HTML5 / Static Site (Landing Page / E-commerce)</option>
+                <option value="github">GitHub Pages (Static Hosting)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="prompt">Detail Kebutuhan & Fitur Website:</label>
+            <textarea id="prompt" placeholder="Contoh: Buatkan struktur halaman e-commerce jasa dengan produk grid, menu hamburger, dan slide promosi..."></textarea>
+        </div>
+
+        <button onclick="generateCode()">Generate Perintah AI</button>
+
+        <div class="output-box" id="outputBox">
+            <h3>Hasil / Struktur Kode:</h3>
+            <pre id="resultText">Memproses...</pre>
+        </div>
+    </div>
+
+    <script>
+        function generateCode() {
+            const platform = document.getElementById('platform').value;
+            const promptText = document.getElementById('prompt').value;
+            const outputBox = document.getElementById('outputBox');
+            const resultText = document.getElementById('resultText');
+
+            if (!promptText.trim()) {
+                alert('Silakan masukkan detail kebutuhan website Anda terlebih dahulu.');
+                return;
+            }
+
+            outputBox.style.display = 'block';
+            resultText.textContent = `Menyiapkan konfigurasi untuk platform: ${platform.toUpperCase()}...\n\nMenganalisis perintah: "${promptText}"\n\n[Status]: Berhasil merancang kerangka awal. (Hubungkan ke endpoint API AI Anda di sini untuk fungsionalitas penuh).`;
+        }
+    </script>
+
+</body>
+</html>
